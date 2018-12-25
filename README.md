@@ -1,2 +1,2 @@
 # DataVisualisatieProject3
-Alleen gemaakt project
+Project 3 jaar 1 - Data visualisatie
