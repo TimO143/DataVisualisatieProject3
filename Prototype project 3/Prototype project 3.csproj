@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74D35008-DDBA-40E6-BB32-F199F5004A34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Prototype_project_3</RootNamespace>
+    <AssemblyName>Prototype project 3</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Npgsql, Version=3.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.2.7\lib\net451\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataGetter.cs" />
+    <Compile Include="Prototype test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prototype test.Designer.cs">
+      <DependentUpon>Prototype test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Prototype test.resx">
+      <DependentUpon>Prototype test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s-Gravenhage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Westland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wassenaar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoetermeer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leidschendam-Voorburg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hele_map_met_juiste_hex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rijswijk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pijnacker-Nootdorp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Midden-Delfland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hillegom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lisse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noordwijkerhout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Noordwijk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leiden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oegstgeest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teylingen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kaag en Braassem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Katwijk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Voorschoten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoeterwoude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alphen aan den Rijn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nieuwkoop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Albrandswaard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Barendrecht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brielle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capelle aan den IJssel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hellevoetsluis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Krimpen aan den IJssel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lansingerland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maassluis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nissewaard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ridderkerk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rotterdam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Westvoorne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goeree-Overflakkee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bodegraven-Reeuwijk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gouda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Krimpenerwaard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waddinxveen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zuidplas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alblasserdam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Binnenmaas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cromstrijen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dordrecht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Giessenlanden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gorinchem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hardinxveld-Giessendam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Korendijk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leerdam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Molenwaard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oud-Beijerland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Papendrecht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sliedrecht.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Strijen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zederik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zwijndrecht.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
